@@ -28,30 +28,19 @@ def show_dialog(app_instance, entity_type, entity_ids):
 
     # we pass the dialog class to this method and leave the actual construction
     # to be carried out by toolkit.
-<<<<<<< HEAD
-    app_instance.engine.show_dialog("Starter Template App...", app_instance, AppDialog)
-
-=======
     app_instance.engine.show_dialog("Starter Template App",    # window title
                                     app_instance,              # app instance
                                     AppDialog,                 # window class to instantiate
                                     entity_type,               # arguments to pass to constructor
                                     entity_ids)
 
->>>>>>> tk-multi-starterapp/shotgun_multi_select
-
 
 class AppDialog(QtGui.QWidget):
     """
     Main application dialog window
     """
-<<<<<<< HEAD
-
-    def __init__(self):
-=======
 
     def __init__(self, entity_type, entity_ids):
->>>>>>> tk-multi-starterapp/shotgun_multi_select
         """
         Constructor
         """
@@ -72,12 +61,4 @@ class AppDialog(QtGui.QWidget):
         # - A tk API instance, via self._app.tk
 
         # lastly, set up our very basic UI
-<<<<<<< HEAD
-        self.ui.context.setText("Current Context: %s" % self._app.context)
-
-
-=======
         self.ui.context.setText("Current selection type: %s, <br>Currently selected ids: %s" % (entity_type, entity_ids))
-
-
->>>>>>> tk-multi-starterapp/shotgun_multi_select
