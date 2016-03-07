@@ -45,10 +45,4 @@ class StgkStarterApp(Application):
         parameters = { "supports_multiple_selection": True }
 
         # now register the command with the engine
-<<<<<<< HEAD
-        self.engine.register_command("Show vfxBoat - send to client ...", menu_callback)
-
-=======
         self.engine.register_command("Starter Template App...", menu_callback, parameters)
-
->>>>>>> tk-multi-starterapp/shotgun_multi_select
